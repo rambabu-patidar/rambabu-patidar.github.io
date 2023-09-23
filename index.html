@@ -1,242 +1,123 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Rambabu</title>
-    <link rel="stylesheet" href="practice.css">
+<html lang="en">
 
-    <style >
-
-  
-    .formula{
-      text-align: center;
-      font-size: 45px;
-
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rambabu Patidar</title>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
     }
 
-        h1{
-          color: blue;
-          background-color: gold;
-        }
-        .formula{
-          border: 1px solid black;
-          padding: 10px;
-          margin: 10px;
-        }
-        .linkState{
-          padding: 20px;
-          border: 1px solid black;
-          background-color: tomato;
-        }
-        .linkState:link{
-          color: tomato;
-          opacity: 0.7;
-          text-decoration: none;
-        }
-        .linkState:hover{
-          color: blue;
-          opacity: 1;
-          text-decoration: underline;
-        }
-        .linkState:visited{
-          color: gold;
-          opacity: 0.5;
-          text-decoration:overline;
-        }
-        .background{
-          background-image: url('backgrd.jpg');
-          background-repeat: no-repeat;
-          background-size: cover;
-          background-attachment: fixed;
-        }
-    </style>
-  </head>
-  <body>
-    <h1 title="My Name 'Rambabu' " class="Name">Rambabu Patidar</h1>
-    <br>
-    <hr>
+    body {
+      min-height: 100vh;
+      font-family: sans-serif;
+      font-size: larger;
 
-    <div  class="about">
-        <ul>
-          <li class="heading"><h3>Personal Info</h3></li>
-          <ul>
-            <li> <pre>Rambabu patidar is empowering the community with the best resources that any individual needs
-            I am currently an bachlor in 4th semester from Jabalpur Engineering College, Jabalpur
-            I love development technology and have proficient knowledge in this field,
-            I love to solve coding problem to increase my problem solving skills.
-            That's enough i think.</pre> </li>
-          </ul>
-          <li class="heading"><h3>Location</h3> </li>
-          <ul>
-            <li>Jabalpur, Madhya Pradesh, India</li>
-          </ul>
-          <li class="heading"> <h3>Tech stack</h3> </li>
-          <ul>
-            <li>C++</li>
-            <li>Java</li>
-            <li><abbr title="Data Structures and Algorithm">DSA</abbr> </li>
-            <li><abbr title="HypeText Markup Language">HTML</abbr> </li>
-            <li>CSS</li>
-            <li>Git and Github</li>
-            <li>Python begineer</li>
-          </ul>
-        </ul>
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
 
-    </div>
+    header {
+      background-color: black;
+      color: white;
+    }
 
-    <hr>
+    nav ul {
+      list-style-type: none;
+      display: flex;
+      justify-content: space-evenly;
+    }
 
-    <h2 style="background-color:powderblue;">Some important links to Reach me </h2>
+    nav ul li {
+      padding: 1rem;
+    }
 
-    <a href="https://www.twitter.com/rambabupatidar_" target="_blank">Twitter</a> <br>
-    <a href="https://www.instagram.com/rambabupatidar_">Instagram</a> <br>
-    <a href="https://www.github.com/RambabuPatidar">Github</a> <br>
-    <a href="https://www.facebook.com/RambabuPatidar">Facebook</a> <br>
-    <a href="#">Youtube</a>
-    <!-- <video src="videofile.ogg" autoplay poster="posterimage.jpg"> -->
-    <!-- <img src="" alt=""> -->
-    </video>
-    <blockquote cite="http://www.google.com/scholar/">
-      This resource is take from the google scholar
-    </blockquote>
+    nav ul li:hover {
+      color: gold;
+      text-decoration: underline;
+      cursor: pointer;
+    }
 
-  <br>
-  <hr>
-    <table>
-      <thead>
-        <tr>
-          <th>
-            Serial No
-          </th>
-          <th>
-            Name
-          </th>
-          <th>
-            Email
-          </th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>01</td>
-          <td>Rambabu</td>
-          <td>patidarrambabu135@gmail.com</td>
-        </tr>
-        <tr>
-          <td>02</td>
-          <td>Abhi</td>
-          <td>abd90029@gmail.com</td>
-        </tr>
-        <tr>
-          <td>03</td>
-          <td>Keshaw</td>
-          <td>keshawRathore123@gmail.com</td>
-        </tr>
-      </tbody>
-      <tfoot>
+    main {
+      background-color: #b6b6b6;
+      flex-grow: 1;
+      display: grid;
+      place-content: center;
+      position: relative;
+      overflow: hidden;
+    }
 
-      </tfoot>
-    </table>
+    h1 {
+      border: 5px solid white;
+      padding: 2rem;
+      border-radius: 25px;
+    }
 
-    <br><br><hr>
-    <h1 id="AkkraBazzi" style= "color:blue" class="Name">Lemme Explain Akkra Bazzi Method</h1>
+    h1:hover {
+      border-color: grey;
+    }
 
-    <p>First of all this method is used to find the upper bound of the recurrence relations which are based on   <br>
-    on the divide and conquer Algorithm .<br>
-  how we gonna find the recurrece relation is already explained in detail in the previous html pages so refer that
-<br> here we will see how to solve the actual the recurrence relation by akkra Bazzi formula:
+    .left,
+    .right,
+    .bottom {
+      width: 30vw;
+      height: 10px;
+      background-color: gold;
+      position: absolute;
+      top: 50%;
+      background: linear-gradient(45deg, #3498db, #e74c3c);
+      transition: all;
+      animation: rotate 3s ease-in-out infinite;
+    }
 
- </p>
+    .left {
+      left: -15vw;
+    }
 
- <h3> <ul>
-   <li>Formula</li>
- </ul> </h3>
-<p>for the general form :</p>
- <div >
-   <p class="fn">F(n) = a <sub>1</sub>(F(b <sub>1</sub>n ) + E <sub>1</sub>(n)) <b>+</b> a <sub>2</sub>(F(b <sub>2</sub>n ) + E <sub>2</sub>(n)) <b>+</b> a <sub>3</sub>(F(b <sub>3</sub>n ) + E <sub>3</sub>(n)) +....... + a <sub>k</sub>(F(b <sub>k</sub>n ) + E <sub>k</sub>(n)) </p>
-   <br>
-   <p>The formula is :</p>
-   <p class="formula">T(n) = O(x <sup>p</sup>( 1 + <sub>1</sub>⨛<sup>x</sup> (g(u)du / u <sup>p+1</sup>)))</p>
-    <p>where p is :</p>
-  <p  class="formula">p : <sub>i =0</sub>⨊<sup>k</sup>  a(b)<sup>i</sup> = 1</p>
- </div>
-<button type="button" name="button">FeedBack</button>
-<button type="button" name="button">Show Support</button>
-<button type="button" name="button">Donate</button>
-<button type="button" name="button">More From me</button>
+    .right {
+      right: -15vw;
+    }
 
+    .bottom {
+      left: 35vw;
+      top: 100%;
+    }
 
-  <img src="img.jpeg" alt="this is an image" width="104" height="142">
+    @keyframes rotate {
+      from {
+        transform: rotate(0deg);
+      }
 
-  <p> This is  <b>Rambabu</b> <br> log <sub>2</sub> 4 <sup>3</sup> <br> <i>Address</i> <br> <strong>Important</strong> <br> <small>Small text</small> <br> <del>Deleted Text</del> <br> <ins>Inserted Text</ins> <br>
-     <mark>Marked Text </mark> </p>
-    <p>this is blockquote text  <br> </p>
-     <p> <blockquote cite="http://#">
-       this is the excat word of this author to which the link is referencing
-     </blockquote> </p>
+      to {
+        transform: rotate(360deg);
+      }
+    }
+  </style>
+</head>
 
-     <p> <abbr title="HyperText Markup Language"> HTML  </abbr> citation and quotes </p>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li>About</li>
+        <li>Experience</li>
+        <li>Contact Me</li>
+      </ul>
+    </nav>
+  </header>
 
-     <blockquote cite="http://#">
-       this is blockquote text
-     </blockquote>
-     <q cite="WWF tells that : "> The community is the best thing you can join.</q>
-     <address class="address">
-       <br>
-       village : chhapri <br>
-       teh : tarana <br>
-       Dist.: Ujjain <br>
-       State: Madhya Pradesh <br>
-       Country : India <br>
-       <br>
-     </address>
+  <main>
+    <h1>Rambabu Patidar</h1>
 
-     <cite>cited text seems something like this</cite> <br>
-     <bdo dir="rtl">This text is very difficult to read</bdo>
+    <div class="left"></div>
+    <div class="right"></div>
+    <div class="bottom"></div>
+  </main>
+</body>
 
-     <!-- this is the comment -->
-
-      <p>image as a link:</p>
-      <br>
-      <a href="#"> <img src="img.jpeg" alt="this is image with link" width="40px"></a>
-      <br> <br>
-      <p>button as a link</p>
-      <br>
-      <a href="#"> <button type="button" name="button">NewsLetter</button> </a>
-      <br>
-      <p>Click below to contact me:</p>
-      <br>
-      <button type="button" name="button"><a href="mailto:patidarrambabu135@gmail.com"> mail me</a></button>
-
-      <p>different colors of link based on state</p>
-      <br>
-      <a class="linkState" href="#">this is a link</a>
-
-      <br><br><hr>
-      <a href="#AkkraBazzi"> Revise Akkra-Bazzi formula</a>
-
-      <br>
-      <p> <img src="img.jpeg" alt="this is image" style="float:right;width:50px;"> This is the image floating on the right side of this paraph Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      <br><br>
-      <p> <img src="img.jpeg" alt="this is image" style="float:left;width:50px;"> This is the image floating on the right side of this paraph Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      <br><br>
-      <p> using image as a map to link it <del>UNSUCCESSFUL ATTEMPT</del> </p>
-      <img src="img.jpeg" alt="my photo" width="255px" map="#mapping">
-      <map name="mapping">
-        <area shape="rect" coords="34,14,100,100" href="#" alt="linkimage" >
-      </map>
-
-      <br> <hr>
-      <div class="background">
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-      </div>
-
-      <br> <br>
-      <p>picture element for the different port views <del>UNSUCCESSFUL MISSION</del> </p>
-      <br>
-      <!-- <picture>
-        <source media="(max-width: 500px)" width="100px" srcset="img.jpeg" >
-          <img src="backgrd.jpd" style="width:auto">
-      </picture> -->
-  </body>
 </html>
